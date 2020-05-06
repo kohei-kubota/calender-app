@@ -2,14 +2,12 @@ import React from "react";
 import { GridList, Typography } from "@material-ui/core";
 
 import CalenderElement from "../CalenderElement";
-import { createCalender } from "../../services/calendar"
 import * as styles from "./style.css";
-
-const calender = createCalender();
 
 const days = ["日", "月", "火", "水", "木", "金", "土"];
 
-const CalenderBoard = () => {
+const CalenderBoard = ({ calender }) => {
+  
   return (
     <div className={styles.container}>
       <GridList className={styles.grid} cols={7} spacing={0} cellHeight="auto">

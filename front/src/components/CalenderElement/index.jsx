@@ -3,7 +3,7 @@ import { Typegraphy, Typography } from "@material-ui/core";
 import dayjs from 'dayjs';
 
 import * as styles from "./style.css";
-import CalenderBoard from "../CalenderBoard";
+import CalenderBoard from "../CalenderBoard/container";
 import { isSameMonth, isFirstDay, isSameDay } from "../../services/calendar";
 
 const CalenderElement = ({ day }) => {
